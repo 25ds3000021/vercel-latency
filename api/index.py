@@ -95,6 +95,6 @@ def analytics(request: RequestData):
             "breaches": breaches
         }
 
-    return results
+    return {"regions": results}
 
 
