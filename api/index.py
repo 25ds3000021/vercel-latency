@@ -16,6 +16,7 @@ app.add_middleware(
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
+    expose_headers=["Access-Control-Allow-Origin"],
 )
 @app.middleware("http")
 async def add_cors_headers(request, call_next):
