@@ -57,7 +57,7 @@ def home():
     return {"message": "Analytics API is running"}
 
 
-@app.post("/")
+@app.post("/api/latency")
 def analytics(request: RequestData):
     results = {}
 
